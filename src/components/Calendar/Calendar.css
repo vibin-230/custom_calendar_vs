@@ -1,0 +1,42 @@
+.individual_day {
+  display: flex;
+  cursor: pointer;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  border: 1px solid ghostwhite;
+  color: #7180ad;
+}
+
+.start {
+  background-color: #488dff;
+  border-top-left-radius: 30;
+  border-bottom-left-radius: 30;
+  color: #ffffff;
+  border: 1px solid #2476ff;
+}
+
+.end {
+  background-color: #488dff;
+  border-top-right-radius: 30;
+  border-bottom-right-radius: 30;
+  color: #ffffff;
+  border: 1px solid #2476ff;
+}
+
+.muted {
+  color: #ced9f7;
+  border: 1px solid ghostwhite;
+}
+
+.active {
+  background-color: #488dff;
+  border-radius: 30;
+  color: #ffffff;
+  border: 1px solid #2476ff;
+}
+
+.today {
+  color: #ce4ee3;
+}
