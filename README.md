@@ -1,3 +1,7 @@
+# custom_calendar_vs
+
+Custom react calendar with date and range selection
+
 Built with React 17.0.X and Rollup 2.X
 
 Dependencies moment.js
