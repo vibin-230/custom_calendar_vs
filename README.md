@@ -40,7 +40,7 @@ export const App = () => {
 };
 ```
 
-Check the [repo](https://https://github.com/vibin-230/custom_calendar_vs) for the code base.
+Check the [repo](https://github.com/vibin-230/custom_calendar_vs) for the code base.
 
 #### Props
 
