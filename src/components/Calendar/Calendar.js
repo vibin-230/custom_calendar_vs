@@ -2,7 +2,12 @@
 import moment from "moment";
 import React, { useReducer, useEffect } from "react";
 
-export const Calendar = ({ setSelectedDate, dayFormat, size, format }) => {
+export const Calendar = ({
+  setSelectedDate,
+  dayFormat = "normal",
+  size = "md",
+  format = "single",
+}) => {
   const [state, setState] = useReducer(
     (state, newState) => ({ ...state, ...newState }),
     {

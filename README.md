@@ -1,4 +1,8 @@
-# custom_calendar_vs
+# Custom_calendar_vs
+
+<div align="center">
+  <img width="436" heigth="398" src="./custom-calendar-vs.png">
+</div>
 
 Custom react calendar with date and range selection
 
@@ -6,33 +10,43 @@ Built with React 17.0.X and Rollup 2.X
 
 Dependencies moment.js
 
-Usage:
+## Before you continue
 
+Custom-calendar-vs is under constant development.
+
+### Installation
+
+Add the Calendar to your project by executing `npm install custom-calendar-vs` .
+
+### Usage
+
+Example of basic code:
+
+```js
 import React, { useState } from "react";
 import moment from "moment";
 import { Calendar } from "../components/Calendar/Calendar";
 
 export const App = () => {
-const [selectedDate, setSelectedDate] = useState(moment());
-return (
-<Calendar
-setSelectedDate={(e) => setSelectedDate(e)}
-format="range"
-size="sm"
-dayFormat="normal"
-/>
-);
-}
+  const [selectedDate, setSelectedDate] = useState(moment());
+  return (
+    <Calendar
+      setSelectedDate={(e) => setSelectedDate(e)}
+      format="range"
+      size="sm"
+      dayFormat="normal"
+    />
+  );
+};
+```
 
-Manditory Prop:
-/_ all dates will be returned in moment.js format _/
+Check the [repo](https://github.com/wojtekmaj/react-calendar/tree/master/sample) for the code base.
 
-format = "single"/"range" => single - should be used for getting a single chosen date
-=> range - should be used for geting a array of chosen dates
+#### Props
 
-setSelectedDate = (date)=>{setSelectedDate(date)} => will retun the chosen date/date_array as per the format props
-
-size = sm/md/lg => sm - (350px) , md - (400px) , lg - (500px)
-
-dayFormat = short/normal => short - will display day names in short form (single letter)
-=> normal - will display day names in normal form (three letters)
+| Prop name      | Description                                                        | Default value                           | Usage                                                                                                                                                                                         |
+| -------------- | ------------------------------------------------------------------ | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| format         | Chooses type of date selection: single/range                       | "single"                                | `format = "single"/ format = "range"`                                                                                                                                                         |
+| setSelecedDate | Call back returning the choosen dates(in moment) as per the format | `(Moment())=>setSelectedDate(Moment())` | <ul><li> format = "single" =>> `(date)=>setSelectedDate(date) -> return moment()` </li><li>format = "range" =>> `(date)=>setSelectedDate(date) -> returns [moment(),moment(),....]`</li></ul> |
+| size           | Size of the calendar                                               | "md"                                    | `size = "sm" / size = "md" / size = "lg" `                                                                                                                                                    |
+| dayFormat      | Displays the day name in single/three letter format                | "normal"                                | `dayFormat = "normal" / format = "short" `                                                                                                                                                    |
