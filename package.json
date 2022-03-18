@@ -1,6 +1,6 @@
 {
   "name": "custom-calendar-vs",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A simple react calender which can be customized as per requirement",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
