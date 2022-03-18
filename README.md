@@ -1,7 +1,7 @@
 # Custom_calendar_vs
 
 <div align="center">
-  <img width="436" heigth="398" src="./custom-calendar-vs.png">
+  <img width="436" heigth="398" src="https://github.com/vibin-230/custom_calendar_vs/blob/main/custom-calendar-vs.png">
 </div>
 
 Custom react calendar with date and range selection
